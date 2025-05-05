@@ -1,34 +1,34 @@
 # Operating-System
-
 Operating Systems Lab Summary (2024–25)
+
+This report summarizes the practical work completed in the Operating Systems Lab during the academic session 2024–25. The lab focused on core operating system concepts such as process management, CPU scheduling, memory handling, and scripting through hands-on experiments using C and Bash on Ubuntu Linux.
+
+Practicals Performed
+1. Basic Linux Commands: Practiced essential Linux commands (ls, cd, pwd, etc.) to navigate the file system and manage files and directories effectively.
+2. Writing C Code in Linux: Used the vi editor to write and compile C programs directly within the Linux terminal.
+3. Foreground and Background Processes: Explored how processes run in the foreground and background using shell commands.
+4. fork() Function: Implemented the fork() system call to create child processes and observe process IDs and execution flows.
+5. FCFS Scheduling Algorithm: Developed a program for the First-Come, First-Served (FCFS) scheduling algorithm using gantt chart to study basic non-preemptive scheduling.
+6. SJF Scheduling Algorithm: Implemented the Shortest Job First (SJF) scheduling algorithm using gantt chart to minimize average waiting time and turnaround time.
+7. Priority Preemptive Scheduling: Wrote a program for Priority Scheduling with preemption using gantt chart to handle process execution based on dynamic priority values.
+8. Banker's Algorithm: Implemented the Banker's Algorithm to simulate deadlock avoidance through safe state checks during resource allocation.
+9. Shell Commands and Shell Scripting: Implemented basic shell commands and scripts.
+10. If-Else and Elif Conditions in Shell Scripts: Created decision-based shell scripts using if, else, and elif for branching logic.
+
+Learning Outcomes
+* Understood core OS principles such as process creation, scheduling algorithms, and deadlock avoidance.
+* Gained proficiency in writing and compiling C code in a Linux environment.
+* Developed skills to control and automate system tasks through shell scripting.
+* Learned practical applications of process and memory management techniques.
+
+Tools Used
+ > Programming Language: C
+ > Scripting Language: Bash
+ > Operating System: Ubuntu Linux
+ > Compiler: GCC
+
+Conclusion
+The Operating Systems Lab provided hands-on experience with fundamental OS concepts, fostering practical problem-solving skills through real-world implementations. It bridged the gap between theory and application, laying a strong foundation in system-level programming and process control.
+
 Instructor: Dr. Princy Diwan
 University: Symbiosis Institute of Technology, Nagpur
-
-This report summarizes the practical work completed in the Operating Systems Lab during the academic session 2024–25. The lab aimed to provide hands-on experience with key OS concepts like process management, CPU scheduling, memory management, and shell scripting.
-
-Practicals Performed:
-1. Basic Linux Commands: Executed common Ubuntu commands (ls, pwd, etc.) to understand file and directory operations.
-2. C Programming with vi Editor: Wrote and executed simple C programs using the vi editor.
-3. Process Creation: Used fork() in C to demonstrate parent-child process interaction.
-4. FCFS Scheduling: Implemented the First-Come, First-Served algorithm to understand basic scheduling.
-5. SJF Scheduling: Simulated Shortest Job First scheduling to optimize average waiting time.
-6. Priority Scheduling: Developed a program to schedule processes based on priority values.
-7. Banker’s Algorithm: Implemented deadlock avoidance using Banker's Algorithm to ensure safe resource allocation.
-8. Shell Commands & Scripting: Practiced shell scripts for automating tasks and implemented commands using C.
-9. If-Else in Shell Scripts: Created scripts using conditional statements to handle basic decision-making.
-
-Learning Outcomes:
-Understood core OS concepts including process scheduling and deadlock avoidance.
-
-Gained practical skills in system-level programming using C and Bash.
-
-Learned to automate tasks using shell scripting.
-
-Tools Used:
-Language: C
-Shell: Bash
-OS: Ubuntu Linux
-Compiler: GCC
-
-Conclusion:
-The lab offered foundational knowledge in operating systems through practical implementation, strengthening both conceptual understanding and programming skills.
