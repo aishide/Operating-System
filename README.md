@@ -30,6 +30,3 @@ Tools Used
 Conclusion
 The Operating Systems Lab provided hands-on experience with fundamental OS concepts, fostering practical problem-solving skills through real-world implementations. It bridged the gap between theory and application, laying a strong foundation in system-level programming and process control.
 
-Instructor: Dr. Princy Diwan
-
-University: Symbiosis Institute of Technology, Nagpur
