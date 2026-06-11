@@ -1,30 +1,81 @@
-# 🖥️ Operating-System
-
+``markdown
 <div align="center">
 
-### ⚙️ Operating Systems Laboratory Repository (2024–25)
+# 🖥️ OPERATING SYSTEM
 
-**Exploring Process Management • CPU Scheduling • Deadlock Avoidance • Shell Scripting • Linux Programming**
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=00FF00&center=true&vCenter=true&width=700&lines=Operating+Systems+Laboratory+2024-25;Process+Management+%7C+CPU+Scheduling;Deadlock+Avoidance+%7C+Shell+Scripting;Ubuntu+Linux+%7C+C+Programming+%7C+Bash" />
 
-Built using **C**, **Bash**, **GCC**, and **Ubuntu Linux**
+<p>
+<img src="https://img.shields.io/badge/Platform-Ubuntu_Linux-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"/>
+<img src="https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c&logoColor=white"/>
+<img src="https://img.shields.io/badge/Scripting-Bash-121011?style=for-the-badge&logo=gnu-bash&logoColor=white"/>
+<img src="https://img.shields.io/badge/Compiler-GCC-red?style=for-the-badge&logo=gnu&logoColor=white"/>
+</p>
+
+--
+
+`bash
+SYSTEM BOOTING...
+LOADING KERNEL MODULES...
+INITIALIZING PROCESS MANAGER...
+INITIALIZING CPU SCHEDULER...
+INITIALIZING RESOURCE MANAGER...
+INITIALIZING SHELL...
+SYSTEM READY ✓
+``
 
 </div>
 
----
+# ⚙️ SYSTEM OVERVIEW
 
-## 📖 Overview
+> Welcome to the **Operating Systems Laboratory Repository (2024–25)**
 
-This repository showcases the practical experiments completed during the **Operating Systems Laboratory (2024–25)**. The work focuses on fundamental operating system concepts through hands-on implementation and experimentation using **C programming** and **Bash scripting** in the **Ubuntu Linux environment**.
-
-The objective of this laboratory was to bridge theoretical operating system concepts with real-world implementation, providing practical exposure to process management, CPU scheduling, deadlock avoidance, and shell scripting.
+This repository simulates the journey through the core components of an operating system. Through practical implementations using **C Programming**, **Bash Scripting**, and **Ubuntu Linux**, various OS concepts were explored, including process management, CPU scheduling, deadlock avoidance, and shell automation.
 
 ---
 
-## 🚀 Lab Experiments
+# 🗂️ SYSTEM ARCHITECTURE
 
-### 📂 1. Basic Linux Commands
+`text
+┌───────────────────────────────┐
+│        USER PROGRAMS          │
+└───────────────┬───────────────┘
+                │
+┌───────────────▼───────────────┐
+│         UNIX SHELL            │
+└───────────────┬───────────────┘
+                │
+┌───────────────▼───────────────┐
+│       PROCESS MANAGER         │
+├───────────────────────────────┤
+│   FCFS Scheduling             │
+│   SJF Scheduling              │
+│   Priority Scheduling         │
+│   fork() System Call          │
+└───────────────┬───────────────┘
+                │
+┌───────────────▼───────────────┐
+│      RESOURCE MANAGER         │
+├───────────────────────────────┤
+│    Banker's Algorithm         │
+└───────────────┬───────────────┘
+                │
+┌───────────────▼───────────────┐
+│         UBUNTU LINUX          │
+└───────────────────────────────┘
+``
 
-Practiced essential Linux commands such as:
+---
+
+# 📂 KERNEL MODULES
+
+## 🐧 Module 01 — Linux Command Interface
+
+### Objective
+
+Learn fundamental Linux commands for navigating and managing the file system.
+
+### Commands Practiced
 
 `bash
 ls
@@ -34,200 +85,295 @@ mkdir
 rm
 cp
 mv
+touch
+cat
 ``
 
-These commands were used for file management, directory navigation, and system interaction.
+### Skills Acquired
+
+* File Management
+* Directory Navigation
+* Linux Terminal Usage
+* System Interaction
 
 ---
 
-### 💻 2. Writing C Programs in Linux
+## 💻 Module 02 — C Programming in Linux
 
-* Used the **vi editor** to create C programs.
-* Compiled programs using **GCC Compiler**.
-* Executed programs directly through the Linux terminal.
+### Objective
+
+Create, compile, and execute C programs within the Ubuntu environment.
+
+### Workflow
 
 `bash
-gcc program.c -o output
-./output
+vi program.c
+
+gcc program.c -o program
+
+./program
 ``
+
+### Skills Acquired
+
+* Linux Development Workflow
+* GCC Compilation
+* Terminal-Based Programming
 
 ---
 
-### 🔄 3. Foreground and Background Processes
+## 🔄 Module 03 — Foreground & Background Processes
 
-Explored process execution modes in Linux:
+### Objective
 
-* Foreground Processes
-* Background Processes
-* Process Monitoring
+Understand process execution behavior in Linux.
 
-Example:
+### Commands
 
 `bash
+./program
+
 ./program &
 ``
 
-This experiment demonstrated how Linux manages multiple running tasks simultaneously.
+### Concepts Covered
+
+* Foreground Execution
+* Background Execution
+* Process Monitoring
+* Job Control
 
 ---
 
-### 🧬 4. Process Creation using `fork()`
+## 🧬 Module 04 — Process Creation using fork()
 
-Implemented the **fork() system call** to create child processes.
+### Objective
 
-Key concepts explored:
+Study process creation using system calls.
 
-* Parent Process
-* Child Process
-* Process IDs (PID)
-* Concurrent Execution
+### System Call
 
 `c
 fork();
 ``
 
-The experiment helped understand how operating systems create and manage processes.
+### Concepts Covered
+
+`text
+Parent Process
+        │
+        ▼
+fork()
+        │
+ ┌──────┴──────┐
+ ▼             ▼
+Parent      Child
+Process     Process
+``
+
+### Learning
+
+* Process IDs
+* Parent-Child Relationships
+* Concurrent Execution
 
 ---
 
-### ⏱️ 5. FCFS Scheduling Algorithm
+## ⏱️ Module 05 — FCFS Scheduling Algorithm
 
-Implemented the **First-Come First-Served (FCFS)** CPU Scheduling Algorithm.
+### Objective
 
-#### Features
+Implement the First-Come First-Served CPU Scheduling Algorithm.
 
-* Non-preemptive scheduling
-* Gantt Chart generation
-* Waiting Time Calculation
-* Turnaround Time Calculation
+### Features
 
-The experiment demonstrated how processes are executed in the order of arrival.
+`text
+✓ Non-Preemptive Scheduling
+✓ Waiting Time Calculation
+✓ Turnaround Time Calculation
+✓ Gantt Chart Visualization
+``
 
----
+### Scheduling Principle
 
-### ⚡ 6. SJF Scheduling Algorithm
-
-Implemented the **Shortest Job First (SJF)** Scheduling Algorithm.
-
-#### Features
-
-* Non-preemptive scheduling
-* Gantt Chart representation
-* Reduced average waiting time
-* Turnaround time analysis
-
-This practical illustrated how shorter processes are prioritized to improve CPU utilization.
+`text
+Arrival Order = Execution Order
+``
 
 ---
 
-### 🎯 7. Priority Preemptive Scheduling
+## ⚡ Module 06 — SJF Scheduling Algorithm
 
-Developed a program for **Priority Scheduling with Preemption**.
+### Objective
 
-#### Features
+Implement the Shortest Job First Scheduling Algorithm.
 
-* Dynamic process interruption
-* Priority-based execution
-* Gantt Chart visualization
-* CPU scheduling analysis
+### Features
 
-This experiment demonstrated how operating systems handle high-priority processes in real-time environments.
+`text
+✓ Shortest Burst Time First
+✓ Reduced Waiting Time
+✓ Gantt Chart Generation
+✓ Turnaround Time Analysis
+``
+
+### Scheduling Principle
+
+`text
+Shortest Process Executes First
+``
 
 ---
 
-### 🔒 8. Banker's Algorithm
+## 🎯 Module 07 — Priority Preemptive Scheduling
 
-Implemented the **Banker's Algorithm** for deadlock avoidance.
+### Objective
 
-#### Key Concepts
+Implement Priority Scheduling with Preemption.
 
-* Resource Allocation
+### Features
+
+`text
+✓ Priority-Based Execution
+✓ Dynamic Interruptions
+✓ CPU Optimization
+✓ Gantt Chart Representation
+``
+
+### Scheduling Principle
+
+`text
+Higher Priority Process
+          ↓
+      CPU Assigned
+``
+
+---
+
+## 🔒 Module 08 — Banker's Algorithm
+
+### Objective
+
+Implement deadlock avoidance through safe resource allocation.
+
+### Concepts Covered
+
+`text
+Available Resources
+        │
+        ▼
+ Resource Request
+        │
+        ▼
+ Safety Check
+        │
+ ┌──────┴──────┐
+ ▼             ▼
+Safe        Unsafe
+Grant       Deny
+``
+
+### Features
+
 * Safe State Detection
-* Need Matrix
+* Need Matrix Calculation
 * Deadlock Prevention
-
-The program verifies whether the system remains in a safe state before granting resource requests.
+* Resource Allocation Management
 
 ---
 
-### 🐚 9. Shell Commands and Shell Scripting
+## 🐚 Module 09 — Shell Commands & Scripting
 
-Created shell scripts to automate common system operations.
+### Objective
 
-Topics covered:
+Automate tasks using shell scripts.
+
+### Example
+
+`bash
+#!/bin/bash
+
+echo "Hello Operating System"
+``
+
+### Concepts Covered
 
 * Variables
 * User Input
 * Loops
-* Commands
+* Automation
 * Script Execution
 
-`bash
-bash script.sh
-``
-
-This practical introduced Linux task automation using Bash.
-
 ---
 
-### 🔀 10. If-Else and Elif Conditions in Shell Scripts
+## 🔀 Module 10 — Conditional Statements
 
-Implemented decision-making logic in shell scripts using:
+### Objective
+
+Implement decision-making logic in shell scripts.
+
+### Example
 
 `bash
-if
+if [ condition ]
+then
+    statement
+elif [ condition ]
+then
+    statement
 else
-elif
+    statement
+fi
 ``
 
-Applications included:
+### Concepts Covered
 
-* Conditional execution
-* User-based decisions
-* System automation tasks
+* Branching Logic
+* User Decisions
+* Conditional Execution
+* Automation Control
 
 ---
+
+# 📊 SYSTEM PERFORMANCE REPORT
 
 ## 🎓 Learning Outcomes
 
-Through these experiments, the following skills and concepts were acquired:
-
-✔️ Understanding of core Operating System concepts
-
-✔️ Process creation and management using system calls
-
-✔️ CPU Scheduling Algorithms and performance analysis
-
-✔️ Deadlock avoidance techniques using Banker's Algorithm
-
-✔️ Linux command-line proficiency
-
-✔️ Shell scripting and task automation
-
-✔️ Writing, compiling, and executing C programs in Linux
-
-✔️ Practical problem-solving using system-level programming concepts
+`text
+[✓] Process Creation & Management
+[✓] Linux Command Line Proficiency
+[✓] CPU Scheduling Algorithms
+[✓] Deadlock Avoidance Techniques
+[✓] Shell Scripting Fundamentals
+[✓] GCC Compilation Workflow
+[✓] Resource Allocation Concepts
+[✓] System-Level Programming Skills
+``
 
 ---
 
-## 🛠️ Technology Stack
+# 🛠️ SYSTEM CONFIGURATION
 
 | Component            | Technology   |
 | -------------------- | ------------ |
+| Operating System     | Ubuntu Linux |
 | Programming Language | C            |
 | Scripting Language   | Bash         |
-| Operating System     | Ubuntu Linux |
 | Compiler             | GCC          |
 | Editor               | vi Editor    |
 
 ---
 
-## 📊 Core Concepts Covered
+# 📈 OS CONCEPT MAP
 
 `text
-Operating Systems
+OPERATING SYSTEM
 │
 ├── Linux Fundamentals
+│   ├── Commands
+│   ├── File System
+│   └── Terminal Usage
+│
 ├── Process Management
 │   ├── fork()
 │   ├── Foreground Processes
@@ -236,22 +382,49 @@ Operating Systems
 ├── CPU Scheduling
 │   ├── FCFS
 │   ├── SJF
-│   └── Priority Preemptive
+│   └── Priority Scheduling
 │
-├── Deadlock Avoidance
+├── Resource Management
 │   └── Banker's Algorithm
 │
 └── Shell Scripting
-    ├── Commands
     ├── Variables
     ├── Conditions
+    ├── Loops
     └── Automation
 ``
 
 ---
 
-## 🎯 Conclusion
+# 🏁 SYSTEM SHUTDOWN
 
-The Operating Systems Laboratory provided practical exposure to fundamental operating system concepts through real-world implementation and experimentation. The exercises strengthened understanding of process management, scheduling algorithms, deadlock avoidance, and shell scripting while developing problem-solving skills in a Linux environment.
+`bash
+Saving Process Data...
+Releasing Resources...
+Closing Shell Sessions...
+Stopping Scheduler...
+Kernel Modules Unloaded...
+``
 
-This repository serves as a comprehensive collection of Operating System laboratory programs and experiments completed during the academic session **2024–25**.
+# ✅ CONCLUSION
+
+The Operating Systems Laboratory provided practical exposure to the internal workings of an operating system through real-world implementations and experimentation. The lab strengthened understanding of process management, CPU scheduling, deadlock avoidance, Linux commands, and shell scripting while developing essential system programming skills.
+
+---
+
+<div align="center">
+
+### 🖥️ OPERATING SYSTEMS LABORATORY • 2024–25
+
+`text
+SYSTEM STATUS : OPERATIONAL ✓
+KERNEL STATUS : LOADED ✓
+PROCESS MANAGER : ACTIVE ✓
+RESOURCE MANAGER : ACTIVE ✓
+LAB COMPLETION : 100% ✓
+``
+
+⭐ If you found this repository useful, consider giving it a star!
+
+</div>
+```
